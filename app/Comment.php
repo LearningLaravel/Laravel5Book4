@@ -12,4 +12,9 @@ class Comment extends Model
     {
         return $this->belongsTo('App\Ticket');
     }
+
+    public function post()
+    {
+        return $this->morphTo();
+    }
 }
